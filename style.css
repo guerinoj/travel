@@ -179,6 +179,13 @@ footer ul {
 
 @media screen and (max-width:768px) {
 
+  header ul{
+    justify-content: space-around;
+  }
+
+  header li{
+    margin:0;
+  }
   .controls {
     display: none;
   }
