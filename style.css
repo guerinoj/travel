@@ -128,9 +128,10 @@ header li {
 .digit {
   position: absolute;
   font-size: 10rem;
-  top: -17%;
+  top: -9%;
   left: -10%;
-  color: rgb(255 255 255 / 19%);
+  color: rgb(255 255 255 / 15%);
+  font-weight: bold;
 }
 
 .step__img {
