@@ -1,0 +1,199 @@
+html {
+  font-size: clamp(16px, 1vw, 3rem);
+}
+
+body {
+  background-color: #354147;
+  color: white;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Noto Serif Display', serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.yellow {
+  color: #FBD784;
+}
+
+.line {
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.line::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  left: 0;
+  top: 50%;
+  height: 2px;
+  background-color: #FBD784;
+  position: absolute;
+}
+
+.container {
+  background-color: #0B1D26;
+  background-image: radial-gradient(transparent, #00000094), url(img/background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 5%;
+  padding: 3%;
+}
+
+.controls a {
+  color: white;
+  text-decoration: none;
+}
+
+.controls div {
+  margin-bottom: 1rem;
+}
+
+.controls {
+  position: fixed;
+  right: 8%;
+  padding-right: 1rem;
+  border-right: white 2px solid;
+  text-align: right;
+}
+
+header {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin: 0 2rem;
+}
+
+#home {
+  min-height: 80vh;
+  display: flex;
+  gap: 25%;
+}
+
+.social {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+#content {
+  width: 70%;
+  margin: auto;
+}
+
+.step {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  margin-bottom: 15%;
+}
+
+.step:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.step__content {
+  width: 60%;
+  position: relative;
+  padding: 2rem;
+}
+
+.digit {
+  position: absolute;
+  font-size: 10rem;
+  top: -17%;
+  left: -10%;
+  color: rgb(255 255 255 / 19%);
+}
+
+.step__img {
+  width: 45%;
+}
+
+.step__img img {
+  width: 100%
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+@media screen and (max-width:1024px) {
+  .container{
+    margin: 0;
+  }
+
+  header{
+    text-align: center;
+  }
+
+  #home{
+    padding-top: 3rem;
+    gap:15%;
+  }
+
+  .step, .step:nth-child(even){
+    flex-direction: column;
+  }
+
+  .step__img, .step__content{
+    width:100%;
+    margin-bottom: 3rem;
+  }
+  
+}
+
+@media screen and (max-width:768px) {
+  
+  .controls{
+    display: none;
+  }
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  #home{
+    gap:10%;
+  }
+ 
+  header, footer {
+    flex-direction: column;
+  }
+
+  .digit{
+    font-size: 7rem;
+    top:-7%;
+  }
+  
+}
