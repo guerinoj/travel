@@ -1,3 +1,6 @@
+@import url('http://fonts.cdnfonts.com/css/chronicle-display');
+@import url('http://fonts.cdnfonts.com/css/svn-gilroy');
+
 html {
   font-size: clamp(16px, 1vw, 3rem);
 }
@@ -6,11 +9,11 @@ body {
   background-color: #354147;
   color: white;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'svn-gilroy', sans-serif;
 }
 
 h1, h2 {
-  font-family: 'Noto Serif Display', serif;
+  font-family: 'chronicle-display', serif;
 }
 
 h1 {
@@ -143,57 +146,57 @@ footer {
   justify-content: space-between;
 }
 
-footer ul{
+footer ul {
   list-style: none;
   padding-left: 0;
 }
 
 @media screen and (max-width:1024px) {
-  .container{
+  .container {
     margin: 0;
   }
 
-  header{
+  header {
     text-align: center;
   }
 
-  #home{
+  #home {
     padding-top: 3rem;
-    gap:15%;
+    gap: 15%;
   }
 
-  .step, .step:nth-child(even){
+  .step, .step:nth-child(even) {
     flex-direction: column;
   }
 
-  .step__img, .step__content{
-    width:100%;
+  .step__img, .step__content {
+    width: 100%;
     margin-bottom: 3rem;
   }
-  
+
 }
 
 @media screen and (max-width:768px) {
-  
-  .controls{
+
+  .controls {
     display: none;
   }
 
-  h1{
+  h1 {
     font-size: 2.5rem;
   }
 
-  #home{
-    gap:10%;
+  #home {
+    gap: 10%;
   }
- 
+
   header, footer {
     flex-direction: column;
   }
 
-  .digit{
+  .digit {
     font-size: 7rem;
-    top:-7%;
+    top: -7%;
   }
-  
+
 }
